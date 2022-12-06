@@ -26,18 +26,11 @@ body {
   background-size: cover;
 }
 
-/* Standart-Styling für den Wrapper und den Body auf großen Geräten */
+/* Standart-Styling für den Wrapper und den Body auf großen Geräten 
 @media screen and (min-width: 1024px) {
   body {
       background-image: rgb(31, 57, 95) url('../images/home.gif');
-  }
-
-  .wrapper {
-      width: 996px;
-      margin: 0 auto;
-  }
-  
-}
+}*/
 
 /* *************************** */
     /* Navigations Leiste */

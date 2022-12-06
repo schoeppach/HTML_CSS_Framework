@@ -1,5 +1,5 @@
 
-/* Development */
+/* Home */
 
 /* **************************** */
     /* Allgemeines Styling */
@@ -21,23 +21,22 @@
 }
 
 body {
-  background: rgb(247, 247, 242) url('../images/whitelake.png') no-repeat
+  height: 100%;
+  background: rgb(15, 19, 36) url('../images/rocket1.jpg') no-repeat
   top center fixed;
   background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
 }
 
-/* Standart-Styling für den Wrapper und den Body auf großen Geräten */
+/* Standart-Styling für den Wrapper und den Body auf großen Geräten 
 @media screen and (min-width: 1024px) {
   body {
-      background-image: rgb(247, 247, 242)url('../images/whitelake.png');
+      background-image: rgb(15, 19, 36) url('../images/koi.png');
   }
-
-  .wrapper {
-      width: 996px;
-      margin: 0 auto;
-  }
+}*/
   
-}
 
 /* **************************** */
     /* Navigations Leiste */
@@ -60,29 +59,103 @@ body {
   color: rgb(223, 145, 28)!important; 
 }
 
-
 /* ***************** */
   /* Inhaltsbereich */
 /* ***************** */
 
-.header {
-  font-size: 100%;
-  text-align: center;
-  color: #859ce2;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin: 0px;
-}
+a,
+a:focus,
+a:hover {
+  color: #fff; }
+
+/* Custom default button */
+.btn-default {
+  color: #fff;
+  text-shadow: none;
+  /* Prevent inheritence from `body` */
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 0.5rem 2rem; }
+
+.btn-default:hover,
+.btn-default:focus {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+
+ /* Cover */
+ 
+.cover {
+  padding: 60px; }
+
+.cover .btn-notify {
+  padding: 10px 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 40px; }
+
+.cover-heading {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 2rem;
+  margin-bottom: 5rem; }
+
+@media (min-width: 768px) {
+  .cover-heading {
+    font-size: 3.4rem;
+    letter-spacing: 15px; } }
+
+.cover-copy {
+  max-width: 500px;
+  margin: 0 auto 3rem; }
+
+/*Footer*/
+  
+.mastfoot {
+  color: #999;
+  /* IE8 proofing */
+  color: rgba(255, 255, 255, 0.5); }
+
+/* Subscribe modal box */
+ 
+#subscribeModal .modal-content {
+  background-color: #303546;
+  color: #fff;
+  text-align: left; }
+
+#subscribeModal .modal-header, #subscribeModal .modal-footer {
+  border: 0; }
+
+#subscribeModal .close {
+  color: #fff; }
+
+#subscribeModal .form-control {
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff; }
+  #subscribeModal .form-control:focus {
+    border-color: #49506a; }
+
 
 /* ***************** */
     /* Footer */
 /* ***************** */
 
 .footer {
-  font-size: 100%;
+  font-size: 80%;
   text-align: center;
   color: #f5a30c!important;
+  
+    position: absolute;
+    width: 100%;
+    min-height: 320px;
+    bottom: 0px;
+    left: 0;
 
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
 }
 
 footer a {
