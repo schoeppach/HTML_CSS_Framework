@@ -21,7 +21,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
           <div class="container">
             <a class="navbar-brand " href="#">schoeppach.com</a> 
-            <a><img src="assets/bootstrap/images/burger.png" alt="menu" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" width="45" height="30"></a>              
+            <a><img src="../assets/bootstrap/images/burger.png" alt="menu" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" width="45" height="30"></a>              
                           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -52,41 +52,35 @@
       </nav>
       
       <!-- Header -->
-      
+      <div class="header">
+
       <div class="inner cover">
         <h1 class="cover-heading">Coming Soon</h1>
-        <p class="lead cover-copy">Hold tight as we get our working robots together and produce the most astonishing product ever.</p>
+        <p class="lead cover-copy">Website im Aufbau, wir sind fast soweit.</p>
         <p class="lead"><button type="button" class="btn btn-lg btn-default btn-notify" data-toggle="modal" data-target="#subscribeModal">Notify Me</button></p>
       </div>
-      <div class="mastfoot">
-        
-      </div>
+     
       <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="subscribeModalLabel">Get Notified on Launch:</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="recipient-name" class="form-control-label">Enter you e-mail to get notified when we launch</label>
-                  <input type="text" class="form-control" id="recipient-name" placeholder="your-name@example.com">
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default">Subscribe</button>
+            
+              <div class="modal-body">
+                <form id="kontaktform" action="https://test.jaderbass.de/formtester.php" method="post">
+                  <div class="form-group">
+                    <label for="recipient-name" class="form-control-label">Werde beim Launch benachrichtigt</label>
+                    <input type="text" class="form-control" id="recipient-name" placeholder="dein-name@example.com">
+                  </div>
+                </form>
+              </div>
+
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-default">Absenden</button>
             </div>
           </div>
         </div>
-    </div>
-  </div>
-</div>
+      </div>
 
+      </div>
       <!-- Footer -->
       <footer class=" bg-black text-center text-lg-start mt-auto"><!--fixed-bottom-->
         <div class="container py-3">
@@ -112,8 +106,10 @@
 
       <!-- jqurey -->
       <script src="scripts/jquery.slim.min.js"></script>
+      <!-- Newsletter Popup -->
+      <script src="scripts/bootstrap.bundle.min.js"></script>
       <!-- BootstrapJavaScript -->
-      <script src="scripts/bootstrap.bundle.min.js"></script>   
+      <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script> 
       
 </body>
 </html>

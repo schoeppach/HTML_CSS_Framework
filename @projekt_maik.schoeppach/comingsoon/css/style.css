@@ -27,16 +27,7 @@ body {
   background-size: cover;
   color: #fff;
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
 }
-
-/* Standart-Styling für den Wrapper und den Body auf großen Geräten 
-@media screen and (min-width: 1024px) {
-  body {
-      background-image: rgb(15, 19, 36) url('../images/koi.png');
-  }
-}*/
-  
 
 /* **************************** */
     /* Navigations Leiste */
@@ -66,7 +57,12 @@ body {
 a,
 a:focus,
 a:hover {
-  color: #fff; }
+  color: #fff; 
+}
+
+.header {
+  padding-bottom: 400px;
+}
 
 /* Custom default button */
 .btn-default {
@@ -76,67 +72,77 @@ a:hover {
   background-color: transparent;
   border: 2px solid #fff;
   border-radius: 20px;
-  padding: 0.5rem 2rem; }
+  padding: 0.5rem 2rem; 
+}
 
 .btn-default:hover,
 .btn-default:focus {
-  background-color: rgba(255, 255, 255, 0.3); }
-
+  background-color: rgba(255, 255, 255, 0.3); 
+}
 
  /* Cover */
  
 .cover {
-  padding: 60px; }
+  padding: 70px; 
+}
 
 .cover .btn-notify {
   padding: 10px 60px;
   font-weight: 500;
   text-transform: uppercase;
-  border-radius: 40px; }
+  border-radius: 40px; 
+}
 
 .cover-heading {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 2rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem; 
+}
 
 @media (min-width: 768px) {
   .cover-heading {
     font-size: 3.4rem;
-    letter-spacing: 15px; } }
+    letter-spacing: 15px; } 
+}
 
 .cover-copy {
   max-width: 500px;
-  margin: 0 auto 3rem; }
-
-/*Footer*/
+  margin: 0 auto 3rem; 
+}
   
 .mastfoot {
   color: #999;
-  /* IE8 proofing */
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5); 
+}
 
 /* Subscribe modal box */
  
 #subscribeModal .modal-content {
   background-color: #303546;
   color: #fff;
-  text-align: left; }
+  text-align: center; 
+}
 
 #subscribeModal .modal-header, #subscribeModal .modal-footer {
-  border: 0; }
+  border: 0; 
+}
 
 #subscribeModal .close {
-  color: #fff; }
+  color: #fff; 
+}
 
 #subscribeModal .form-control {
   margin-top: 1rem;
   background: rgba(0, 0, 0, 0.4);
-  color: #fff; }
-  #subscribeModal .form-control:focus {
-    border-color: #49506a; }
+  color: #fff;
+  text-align: center;
+}
 
+#subscribeModal .form-control:focus {
+  border-color: #49506a;
+}
 
 /* ***************** */
     /* Footer */
