@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabellen</title>
+</head>
+<body>
+     <h1>Tabellen</h1>
+
+     <h2>einfache Tabellen</h2>
+
+    <!--Das Attribut border ist veraltet und nicht mehr erwünscht
+    wir nutzen es hier nur, um die Rahmen darzustellen, richtig wäre CSS-->
+
+     <table border="1">
+        <tr>
+            <td>Zelle 1 </td>
+            <td>Zelle 2 </td>
+            <td>Zelle 3 </td>
+        </tr>
+        <tr>   
+            <td>Zelle 1 </td>
+            <td>Zelle 2 </td>
+            <td>Zelle 3 </td>
+        </tr>
+     </table>
+
+     <h2>Tabelle mit Kopfzeile</h2>
+     
+     <table border="1">
+        <tr>
+            <th>lfd. Nr.</th>
+            <th>Artikel</th>
+            <th>Preis</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bleistift</td>
+            <td>1,29</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Radiergummi</td>
+            <td>2,49</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Kugelschreiber</td>
+            <td>5,39</td>
+        </tr>
+    </table>
+
+    <h2>Tabelle mit Sektionen</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>lfd. Nr.</th>
+                <th>Artikel</th>
+                <th>Preis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bleistift</td>
+                <td>1,29</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Radiergummi</td>
+                <td>2,49</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kugelschreiber</td>
+                <td>5,39</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>=</td>
+                <td>Recnungsbetrag</td>
+                <td>9,45</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Tabellenbeschreibung</h2>
+
+    <!--table>(tr>td*2)*4-->
+
+    <table border="1">
+        <caption>
+            Beschreibung der Farbe
+        </caption>
+        <tr>
+            <th>Name</th>
+            <th>Lieblingsfarbe</th>
+        </tr>
+        <tr>
+            <td>Wassily</td>
+            <td>Rosa</td>
+        </tr>
+        <tr>
+            <td>Dawid</td>
+            <td>Lila</td>
+        </tr>
+        <tr>
+            <td>Andre</td>
+            <td>Biergelb</td>
+        </tr>
+    </table>
+
+    <!--markieren und dann strg+alt+e (oder t) dann thead tbody oder tfoot eingeben-->
+
+    <h2>Zellen verbinden</h2>
+
+    <table border="1">
+        <!--(tr>td*3)*4-->
+        <tr>
+            <td colspan="3">Zeile 1 Zelle 1</td>
+            
+        </tr>
+        <tr>
+            <td>Zeile 2 Zelle 1</td>
+            <td colspan="2">Zeile 2 Zelle 2</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="2">Zeile 3 Zelle 1</td>
+            <td>Zeile 3 Zelle 2</td>
+            <td>Zeile 3 Zelle 3</td>
+        </tr>
+        <tr>
+            <td>Zeile 4 Zelle 1</td>
+            <td>Zeile 4 Zelle 2</td>
+            <td>Zeile 4 Zelle 3</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

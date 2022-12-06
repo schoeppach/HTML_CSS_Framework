@@ -1,0 +1,113 @@
+
+/* Old Website */
+
+/* **************************** */
+    /* Allgemines Styling */
+/* **************************** *
+
+/* Normalisierung bestimmter Elemente */
+* {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  font-family: Helvetica, Arial, Droid-sans, sans-serif;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  /*font-size: 16px;
+  color: #333;*/
+}
+
+body {
+  background: url('../images/home.gif') no-repeat
+  top center fixed;
+  background-size: cover;
+}
+
+/* *************************** */
+    /* Navigations Leiste */
+/* *************************** */
+
+.navbar-brand {
+  color: rgb(223, 145, 28)!important;
+  background-color: transparent !important;
+  font-size: 15px;
+}
+.navbar-brand:hover {
+  color: rgb(223, 28, 174)!important; 
+}
+.nav-link {
+  color: rgb(223, 28, 174)!important;
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  color: rgb(223, 145, 28)!important; 
+}
+
+.dropdown-item {
+  color: rgb(189, 22, 147)!important;
+}
+
+.dropdown-menu {
+  background: transparent!important;
+}
+
+/* ***************** */
+  /* Inhaltsbereich */
+/* ***************** */
+      
+.headline {
+  font-size: 100%;
+  justify-content: center;
+  text-align: center;
+  color: #f89f10;
+  padding: 20px;
+  margin-top: 35px;
+}
+
+.headline2 {
+  font-size: 100%; 
+  text-align: center;
+  color: #66635d;
+  padding: 20px;
+}
+
+.headline3 {
+  font-size: 80%;
+  text-align: center;
+  color: #fff;
+  padding: 0px;
+}
+
+.link {
+  font-size: 100% !important;
+  text-align: center;
+  color: #f89f10;
+  padding: 50px;
+  margin: 0px;
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    text-decoration: none;
+}
+
+.thumb {
+
+  font-size: 100%;          
+  text-align: center;
+  color: #949594;
+  padding: 5px;
+}
+
+.footer {
+  font-size: 100%;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 40px;
+}
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Externe Hyperlinks mit Icon Kennzeichen</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+   
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        /* Variante 1: sleektiere Target-Attribut */
+        /* a[target]::after {
+            font-family: 'simple-line-icons';
+            content: " \e053" 
+        }*/
+
+        /* 2. Variante selektiere nach dem Protokoll im href Attribut */
+        a[href^="https://"]::after {
+            font-family: 'simple-line-icons';
+            content: " \e053"
+        }
+            /* Varianten 
+            .icon-share-alt content: "\e05a"
+            .icon-mustache content: "\e014"
+            .icon-umbrella content: "\e053"
+            */
+
+    </style>
+
+</head>
+<body>
+    <h1>Externe Hyperlinks mit Icon Kennzeichen</h1>
+
+    <p><a href="https://google.de">Google </a></p>
+
+    <p><a href="../2022-11-17/01-formular.html">Formulare HTML</a></p>
+
+    <p><a href="https://www.iad.de" target="_blank">IAD GmbH</a></p>
+
+</body>
+</html>

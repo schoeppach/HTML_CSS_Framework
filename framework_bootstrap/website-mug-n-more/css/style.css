@@ -1,0 +1,196 @@
+/* allgemein*/
+
+/*schriften*/
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, .jdb-font-alt {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+/* buttons */
+.jdb-btn-round {
+    border-radius: 30px;
+}
+
+/* innenabstand für abschnitte */
+section {
+    padding: 140px 0;
+}
+
+/* überlagerungen */
+.jdb-bg-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51,51,51, 0.9); /* 0.9 deckkraft*/
+    position: absolute;
+    top: 0;
+}
+
+/* damit die Inhalts-Elemente über dem Overlay liegen */
+
+.row > * {
+    position: relative;
+}
+
+/* bilderfür impressionen damit keine Lücken zwischen den Bildern entstehen
+(img-fluid hat als Standard nur max-width: 100%) */
+
+#impressionen .img-fluid {
+    width: 100% !important;
+}
+
+/* graustufenfilter effekt */
+
+#produkte img,
+#impressionen img,
+#bohne img {
+    filter:grayscale(60%);
+    transition: filter 0.3s ease-in-out;
+}
+
+#produkte img:hover,
+#impressionen img:hover,
+#bohne img:hover {
+    filter: none;
+}
+
+/* navigation */
+
+nav.navbar {
+    transition: all .7s ease-in-out;
+}
+
+/* Hover Aktive-Farbe */
+
+.navbar-nav button:hover,
+.navbar-nav button:active,
+.navbar-nav button:focus,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+a .text-white:hover,
+a.text-white:hover {
+    color: #dc3545 !important;
+}
+
+
+
+
+/* warenkorb */
+.navbar-nav .icon-basket {
+    font-size: 1.5em;
+    line-height: 0.8;
+}
+
+.navbar-nav .badge {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+/* hero */
+
+.jdb-hero-bg {
+    background: url("../images/bg-hero.jpg") center top fixed no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#home .container {
+    height: 100%;
+}
+
+#home .row {
+    height: 80%;
+}
+
+/* über uns */
+
+.jdb-img-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50vw;
+    overflow: hidden;
+}
+
+/* @media screen and (min-width: 1200px) {
+    .jdb-img-bg > .img-fluid 
+    max-width: 80%!important;
+} */
+
+/* die bohne */
+
+.jdb-bohne-bg {
+    background: url("../images/bg-bohne.jpg") center top fixed no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#bohne .rounded-circle {
+    border: 8px solid #fff;
+}
+
+/* testtimoniels */
+
+.jdb-testimonials-bg {
+    background: url("../images//bg-testimonials.jpg") center top fixed no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#testimonials .carousel-control-prev,
+#testimonials .carousel-control-next {
+    width: 3%;
+}
+
+#testimonials .carousel-indicators {
+    bottom: -30px;
+}
+
+#testimonials .carousel-indicators button {
+    max-width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Newsletter */
+.jdb-newsletter-bg {
+    background: url("../images/bg-newsletter.jpg") center top fixed no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Formulare */
+
+.input-group-lg .input-group-text {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.input-group .form-control {
+    border-radius: 30px;
+}
+
+/* Impressum*/
+
+footer a {
+    text-decoration: none;
+}
+
+footer a > span {
+    font-size: 1.5rem;
+}
+
+/* Back to Top Button */
+#backtotopbutton {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    display: none;
+}

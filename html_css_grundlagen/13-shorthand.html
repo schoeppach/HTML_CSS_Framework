@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Kurzschreibweisen</title>
+    <style>
+
+        body {
+         font-family: sans-serif;
+         font-size: 20px;
+        }
+
+        h1 {
+            /* einzelne Eigenschaften für den Rahmen */
+            border-bottom-style: solid;
+            border-bottom-width: 5px;
+            border-bottom-color: orange;
+        }
+
+        h2 {
+            /* Shorthand-Schreibweise für den Rahmen */
+            border-bottom: 3px solid darkred;
+        }
+
+        p {
+            color: rgb(70, 40, 206);
+        }
+
+        span {
+            color: blue;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Shorthand-CSS in kurz</h1>
+
+    <h2>Das ist meine Überschrift</h2>
+
+    <p style="color: green;font-weight: bold;">Es gibt eine <span>CSS-Definition</span> direkt am HTML-Tag</p>
+
+    <p>In diesem Absatz wird die CSS-Definition aus internen
+    CSS-Bereich umgesetzt</p>
+    
+</body>
+</html>

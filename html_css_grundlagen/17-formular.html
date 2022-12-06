@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+
+</head>
+
+<body>
+    <h1>Formulare</h1>
+
+    <form id="kontaktform" action="https://test.jaderbass.de/formtester.php" method="post">
+
+        <!-- Anrede Feld -->
+        <p>Anrede:
+            <label>
+                <input type="radio" name="anrede" value="Frau" checked>
+                Frau
+                <!-- checked = Vorausgewählt -->
+            </label>
+
+            <label>
+                <input type="radio" name="anrede" value="Herr">
+                Mann
+            </label>
+
+            <label>
+                <input type="radio" name="anrede" value="Divers">
+                Weiß nicht genau
+            </label>
+        </p>
+        
+        <!-- Formular Feld -->
+        <p>        
+            <label for="vname">Vorname:</label>
+            <input type="text" name="vname" id="vname" maxlength="250"
+            placeholder="Bitte Vornamen eingeben">
+            <!-- Anweisungshilfe im Feld -->
+        </p>
+
+        <p>
+            <label for="nname">Nachname*</label>
+            <input type="text" name="nname" id="nname" required
+            placeholder="Bitte Nachnamen eingeben"> 
+            <!-- required Notwendiges ELement -->
+        </p>
+
+        <p>
+            <label for="email">E-Mail-Adresse</label>
+            <input type="email" name="email" id="email">
+        </p>
+
+        <p>
+            <label for="url">Internet Adresee</label>
+            <input type="url" name="url" id="url">
+        </p>
+
+        <p>
+            <label for="pw">Passwort:</label>
+            <input type="password" name="pw" id="pw">
+            <input type="hidden" name="vertsteckt" value="versteckte Botschaft">
+            <!-- versteckes Ausfüllen -->
+        </p>
+
+        <p>
+            <input type="submit" value="Absenden">
+            <input type="reset" value="Zurück"> <!--zurücksetzten auf Anfangszustand-->
+        </p>
+
+        <!-- Checkbox -->
+        <p>Lieblingsspeise:
+            <label>
+                <input type="checkbox" name="speisen[]" value="Pizza">
+                Pizza
+             </label>
+
+             <label>
+                <input type="checkbox" name="speisen[]" value="Pasta">
+                Pasta
+            </label>
+
+            <label>
+                <input type="checkbox" name="speisen[]" value="BBQ">
+                BBQ
+           </label>
+        </p>
+
+        <!-- Dropdown Feld -->
+
+        <p>
+            <label for="streaming">Streaming Dienste:</label>
+            <select name="streaming[]" id="streaming" multiple>
+                <optgroup label="Video">
+                    <option value="n">Netflix</option>
+                    <option value="a">AmaazonVideo</option>
+                    <option value="d">Disney+</option>
+                    <!-- alles markieren optgroup im Feld eingeben enter -->
+                </optgroup>
+
+                <optgroup label="Audio">
+                    <option value="s">Spotify</option>
+                    <option value="d">Deezer</option>
+                    <option value="ap">AppleMusic</option>
+                </optgroup>   
+            </select>
+        </p>
+
+        <!-- Text Feld -->
+
+        <p>
+            <label for="nachricht">Ihre Nachricht an uns</label>
+            <textarea name="nachricht" id="nachricht" cols="30" rows="25"
+            placeholder="Bitte Text eingeben">
+            </textarea>           
+        </p>
+
+        <label for="aussen">Ausserhalb</label>
+        <input name="kontaktform" type="text" name="aussen" id="aussen">
+
+
+    </form>
+
+</body>
+</html>

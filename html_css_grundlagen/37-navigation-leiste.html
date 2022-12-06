@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        body {font-family: sans-serif;}
+
+        nav > ul {
+            /* Listen Bullets ausschalten */
+            list-style: none;
+
+            /* Hintergrungfarbe der Liste */
+            background-color: cornflowerblue;
+
+            /* mit FLexbox die List Itmens nebeneinander */
+            display: flex;
+            
+        }
+
+        nav > ul > li {
+            margin-right: 10px;
+            
+        }
+
+        nav > ul > li > a {
+            /* Unterstreichung abschalten */
+            text-decoration: none;
+
+            padding: 10px 5px;
+            /* damit das Padding Wirkung zeigt */
+            display: inline-block;            
+        }
+
+        /* normale Link (unbesucht) */
+        nav > ul > li > a:link,
+
+        /* besuchte Link */
+        nav > ul > li > a:visited,
+
+        /* aktiver Zustand */
+        nav > ul > li > a:active
+
+        /* Link hat den Fokus */
+        nav > ul > li > a:focus {
+            color: white;
+        }
+
+        /* Mouseover-Link */
+        nav > ul > li > a:hover {
+            background-color: lightblue;
+            color: #333;
+        }
+
+        nav > ul > li:last-child {
+            margin-left: auto;
+        }
+
+        nav > ul > li:first-child {
+            margin-right: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <!-- (li>a)*7 -->
+            <li><a href="#">Start</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Refernzen</a></li>
+            <li><a href="#">Produkte</a></li>
+            <li><a href="#">Kundenmeinungen</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Impressum</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

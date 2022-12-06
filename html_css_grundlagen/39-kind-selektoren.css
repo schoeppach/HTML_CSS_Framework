@@ -1,0 +1,26 @@
+
+/* Betrifft ALLE List Items egal von welcher Mutter*/
+
+li {
+    text-decoration: underline;
+}
+
+/* Nachfahre-Selektor betrifft alle Nachfahren der div Mutter */
+div li {
+    font-style: italic;
+}
+
+/* Kind-Selektor betrifft nur die Kinder der div-Mutter
+(keine Enkel,Urenkel) */
+div > ul {
+    list-style: none;
+}
+
+div ul {
+    border-color: #aff;
+}
+
+/* Betrifft NUR das Ur Ur Enkel der div-Mutter */
+div > ul > li > ul > li {
+    font-weight: bold;
+}

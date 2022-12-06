@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Textformatierung Teil2</title>
+</head>
+<body>
+    <h1>Textformatierung Teil2</h1>
+
+    <!--Block Elmemente-->
+    <!--Dazu gehören alle Absätze (p) und Überschrifften (h1-h6)
+    aber auch Bereiche (z.B <body>)
+    Sie erzeugen jeweils einen eigenen (rechteckigen)
+    Rahmen, beginnen in der Regel immer (mit einem Abstand)
+    in einer neuen Zeile und nehmen die komplette Breite
+    ihres Eltern-Elements ein.-->
+
+        <!--Emmet Code:-->
+
+        <!--(h1>{Überschrift, Ebene $})*6-->
+
+
+        (h1>{Überschrift $})*6
+
+    <!-- Inline Elemente -->
+    <!-- Dazu gehören Text-Auszeichnungen (fett,kursiv, etc.) und Hyper Links.
+    Sie laufen in der Zeile mit dem Text und haben keine "eigene" Höhe und Breite.
+
+    WICHTIG Regel: Inline Elemente müssen immer von einem Block-Element
+    (ausser <Body>) umschlossen sein.
+    Sie dürfen keine  Block  Elemente als Kinder beinhalten.
+    Ausnahme: Hyperlinks --> 
+    
+    <p>Wichtigkeit und Dringlichkeit: <strong>fetter Text (mit strong)</strong>.</p>
+
+    <p>Aufmerksamkeit steuern: <b>fetter Text (mit b)</b></p>
+
+    <p>ausprache und Betonung: <i>fetter Text (mit b)</i></p>
+
+    <p>Gewichtung: <em>fetter Text (mit b)</em></p>
+
+    <p>Ein <u>unterstrichener Text sollte möglichst im Fliestext nich 
+    benutzten da Hyperlink in der Regel unterstrichen dargestellt wird.
+    </u><b>fetter Text (mit b)</b></p>
+
+    <p>Für Formeln etc: <sup>hochgestellten Text mit sip</sup> <sub>oder Tiefergestellten Text mit sub</sub> <b>fetter Text (mit b)</b></p> 
+
+    <p>Einmal: <del>durchstrichener Text (mit del)</del></p>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Kontaktformular</title>
+    <style>
+
+        html { box-sizing: border-box;}
+        *, *::before, *::after {box-sizing: inherit;}
+
+        body {
+            font: 1rem/1.5 sans-serif;
+            min-width: 320px;
+            padding: 1rem;
+            margin: auto;            
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Basisfromatierung */
+        form { max-width: 500px;}
+        form > div { margin-bottom: 1em;}
+
+        /* zentrale Formatierung für alle Formular-Elemente */
+        input,
+        textarea,
+        button {
+            font-size: 1rem;
+            line-height: normal;
+            padding: 0.25rem 0.75rem;
+             /* 1rem sind 16px */
+            border: none;
+            margin: 0;
+            
+        }
+
+        input, textarea {
+            background: #e9e9e9;
+        }
+
+        button {
+            text-align: center;
+            background: #000;
+            color: #fff;
+            cursor: wait; /*pointer*/
+        }
+
+        button:hover,
+        button:focus {
+            background: darkorange;
+            color: white;
+        }
+
+        /* Flex it */
+        form > div {
+            display: flex;
+            flex-flow: wrap;
+        }
+        input,
+        textarea,
+        button {
+            flex: 1 20rem;
+        }
+        label {
+            flex: 0 7rem;
+        }
+
+        /* Buttonbreite ändern ohne Media Query
+        Buttonbreite durch Inhalt, rechts ausgerichtet */
+
+        /* button {
+            flex:none; /* 0 0 auto */
+           /* margin-left: auto; /* Button nach rechts außen */
+        /*} */
+
+        /* Buttongreite mit Media Query ändern
+        Button so breit wie Eingabefelder
+        Wert für Media Query durch Ausprobieren ermitteln
+        muss nicht unbedingt Pixel genau sein. */
+
+        @media screen and (min-width: 464px) {
+            button {
+                margin-left: 7rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox - Kontaktformular</h1>
+
+    <form action="" class="kontaktformular">
+
+        <div>
+            <label for="besuchername">Ihr Name:</label>
+            <input type="text" name="besuchername" id="besuchername" required>
+        </div>
+
+        <div>
+            <label for="besuchermail">Ihre Mail:</label>
+            <input type="email" name="besuchermail" id="besuchermail" required>
+        </div>
+
+        <div>
+            <label for="nachricht">Ihre Nachricht:</label>
+            <textarea name="nachricht" id="nachricht" cols="20" rows="5" required></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Abschicken</button>
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+/* Home */
+
+/* **************************** */
+    /* Allgemines Styling */
+/* **************************** */
+
+/* Normalisierung bestimmter Elemente */
+* {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  font-family: Helvetica, Arial, Droid-sans, sans-serif;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+body {
+  background: url('../images/koi.png') no-repeat
+  top center fixed;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+      background-image: url('../images/koi.png');
+  }
+
+  .wrapper {
+      width: 996px;
+      margin: 0 auto;
+  }
+  
+}
+
+/* **************************** */
+    /* Navigations Leiste */
+/* **************************** */
+
+.navbar-brand {
+  color: rgb(223, 145, 28)!important;
+  background-color: transparent !important;
+  font-size: 15px;
+}
+.navbar-brand:hover {
+  color: rgb(223, 28, 174)!important;
+}
+.nav-link {
+  color: rgb(223, 28, 174)!important;
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  color: rgb(223, 145, 28)!important; 
+}
+
+.dropdown-item {
+  color: rgb(189, 22, 147)!important;
+}
+
+.dropdown-menu {
+  background: transparent!important;
+}
+
+/* ***************** */
+  /* Inhaltsbereich */
+/* ***************** */
+
+.header {
+  font-size: 150%;
+  text-align: center;
+  color: #8195d1;
+  padding-top: 100px;
+}
+
+
+.footer {
+  font-size: 100%;
+  text-align: center;
+  color: #f5a30c!important;;
+  margin-top: -700px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a > span {
+  font-size: 1.0rem;
+}
+
+    
+

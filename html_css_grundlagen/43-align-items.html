@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Ausrichtung anhand der Querachse - align-items und align-left</title>
+    
+    <link rel="stylesheet" href="css/all-about.css">
+
+    <style>
+        ul {
+            list-style-type: none;
+            max-width: 35rem;
+            background: rgb(234,232,232);
+            padding: 0.25rem;
+            border: 1px solid rgb(212, 212, 212);
+            margin: 0; 
+          }
+          li { 
+            text-align: center; 
+            padding: 0.5rem; 
+            margin: 0.25rem; 
+          }
+          li:nth-child(1) { background: rgb(239, 224, 190); } 
+          li:nth-child(2) { background: rgb(219, 221, 205); } 
+          li:nth-child(3) { background: rgb(202, 220, 216); }
+
+          /* Flex it ... */
+          ul {
+            display: flex;
+            /* Standart-Werte */
+            flex-flow: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            height: 12rem;
+          }
+
+          li:nth-child(2) {
+            align-self: stretch;
+          }
+          
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox - Ausrichtung anhand der Querachse</h1> <code>align-items</code>und
+    <code>align-self</code>
+
+    <ul>
+        <li>Flex-Item 1</li>
+        <li>Flex-Item 2</li>
+        <li>Flex-Item 3</li>
+    </ul>
+    
+</body>
+</html>

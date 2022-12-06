@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafiken und Bilder</title>
+</head>
+<body>
+    <h1>Grafiken und Bilder</h1>
+
+    <img src="images/erde.jpg" alt="Unsere Erde vom All aus gesehen"
+    width="500" heigh="500"> <!--oder width="30%"-->
+
+    <figure>
+        <!--Semantischer Zusammenhang zwischen Bild und Bildbeschreibung-->
+        <img src="images/portrait-1.jpg" alt="Portrait">
+        <figcaption>Abb.1: Ein Portrait</figcaption>
+    </figure>
+    <h2>Bild von einer anderen Website</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png" alt="Pinguin">
+
+    <!--Bilder in Abhängigkeit von der Bilschirmauflösung laden-->
+    <figure>
+        <img 
+            src="images/small.jpg"
+            alt="Brücke in New York"
+            srcset="images/small.jpg 1x, images/medium.jpg 2x, images/large.jpg 3x">
+    </figure>
+
+    <!--Bilder in Abhängigkeit von der Bilschirmbreite laden-->
+    <figure>
+        <img 
+            src="images/small.jpg"
+            alt="Brücke in New York"
+            srcset="images/small.jpg 400w, images/medium.jpg 800w, images/large.jpg 1200w">
+    </figure>
+
+    <picture>
+        <source media="(min-width: 600px)" srcset="images/medium.jpg">
+        <Source src="images/small.jpg">
+    </picture>
+
+</body>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributselektoren und Pseudoklassen</title>
+
+            <!-- Attributsselektoren -->
+        <style>
+
+            /*alle Links mit href-Attribut*/
+            a[href] {color: green;}
+            /* alle Links bei denen das href Attribut den Wert "#start" hat */
+            a[href="#start"] {color: red;}
+            /* alle Absätze bei denen im class Attribut das Wort 'Jena' vorkommt */
+            p[class~='Jena'] {
+                color: blue;
+            }
+            /* Alle Absätze bei denen im Class- Attribut die Zeichekette 'Jena' vorkommt */
+            p[class*='Jena'] {
+                font-weight: bold;
+            }
+
+            /* Pseudoklassen */
+
+            /* das erste li-Element welches das erste Kind ist */
+            li:first-child {font-weight: bold;}
+
+            /* das li Element welches das 3.Kind ist */
+            li:nth-child(3) {color: navy;}
+
+            /* das li Element welches das letzte Kind ist */
+            li:last-child {font-style: italic;}
+
+        </style>
+
+</head>
+<body>
+    <h1><a target="_blank" href=
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">
+        Attributselektoren</a> und Pseudoklassen</h1>
+
+    <div>
+        <a name="ohne">Link ohne href</a><br>
+        <a href="#">ein grüner Link</a><br>
+        <a href="#start">ein roter Link</a><br>
+        <a href="https://www.Jena.de">ein grüner Link</a><br>
+        <a href="dokumentation.pdf">Link zu einer PDF Datei</a><br>
+        <p class="hinweis Jena ohne Rahmen">Absatz mit einer Klasse "Jena".</p>
+        <p class="ohneJena hinweis">Absatz ohne Jena</p>
+    </div>
+
+        <ul>
+            <li>Erstens</li>
+            <li>Zweitens</li>
+            <li>Drittens</li>
+            <li>Viertens</li>
+        </ul>
+
+    </body>
+</html>

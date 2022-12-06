@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innenabstand, Rahmen und Überlauf</title>
+
+    <style> 
+        div {
+            background-color: #ed9c53;
+            border: 3px rgb(253, 252, 252);
+            margin-bottom: 20px;
+
+            /* Shorthand wie bei margin */
+            padding: 10px;
+        }
+
+        /* Nachfahre-Selektor */
+        #unten div {
+            width: 300px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        #ganzunten {
+            width: 200px;
+            height: 100px;
+            overflow-y: scroll;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Innenabstand, Rahmen und Überlauf</h1>
+
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit. Aliquid, obcaecati. Non tenetur, eveniet ad autem
+    numquam repellendus ratione ex dicta id, fugiat ipsa assumenda
+    soluta cum. Delectus asperiores esse commodi?</div>
+    
+    <div id="unten">
+
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Accusantium nobis ut odio! Cumque repellendus magni ab obcaecati
+        veniam dolore nulla sed aliquam optio! Tempora placeat beatae
+        nemo voluptas architecto molestiae.</div>
+
+    </div>
+
+        <div id="ganzunten">
+     
+            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Accusantium nobis ut odio! Cumque repellendus magni ab obcaecati
+            veniam dolore nulla sed aliquam optio! Tempora placeat beatae
+            nemo voluptas architecto molestiae.</div> 
+        
+        </div>
+
+</body>
+</html>

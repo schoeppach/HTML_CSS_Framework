@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Ausdehnung - display:flex mit mehr Inhalt</title>
+    <style>
+        /* Grundformatierung */
+        main {
+            max-width: 720px;
+            background: #f1f1f1;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+        }
+        article:nth-child(1) {  background: #d5e5f9;    }
+        article:nth-child(2) {  background: #a1b1c4;    }
+        article:nth-child(3) {  background: #607792; color: gold;   }
+
+        /* Flexbox */
+        main {
+            display: flex;
+            min-height: 10rem;
+            
+        }
+
+        article {
+            padding: 0.5rem;
+            border-radius: .5rem;
+            margin: .5rem;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Flexbox - Ausdehnung<code>flex: basis</code> mit mehr Inhalt</h1>
+
+    <main>
+        <article>Artikel 1. Lorem ipsum dolor sit amet consectetur adipisicing elit.</article>
+        <article>Artikel 2. nur wenig Text.</article>
+        <article>Artikel 3. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</article>
+    </main>
+</body>
+</html>

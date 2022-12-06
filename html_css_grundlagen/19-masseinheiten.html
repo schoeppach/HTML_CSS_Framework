@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masseinheiten</title>
+
+    <style>
+        /* Absolute Masseinheiten
+
+        Pixel (px)
+        Punkt (pt)
+        Inch (in)
+        Miliimeter (mm)
+        Zentimeter (cm)
+        
+        */
+
+        /* Realtive Masseinheiten
+
+        Prozent (%)
+            bezieht sich auf die Grössenangabe des übergeordneten Eltern Elementes
+        
+            Ems (em, rem)  
+                bezieht sich auf die Breite des Buchsstaben "m"
+
+                em: ... des übergeordneten Eltern-Elementes (ähnlich Prozent) in
+                Abhängigkeit von der Schriftgrösse dieses Elementes
+
+                rem: ... des Root-Elementes (html)
+                
+            Exes (ex)
+                wie bei em, nur ist hier die Basis das kleine "x"
+
+            Viewportbreite,
+            Viewporthöhe (vw, vh)
+                bezieht sich auf die Grösse des sichtbaren Bereichs des Monitors
+            
+        */
+
+        html { font-size: 32px; }
+
+        div {
+            font-size: 24px;
+            border: 5px solid green;
+            width: 50vw;
+            height: 50%;
+        }
+
+        p {
+            font-size: 0.5em;    
+        }
+
+        .basis {
+            font-size: 0.5rem;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Masseinheiten</h1>
+
+    <p>Standard-Absatz</p>
+
+    <div>
+        <h2>Überschrift Ebene 2</h2>
+
+        <p>Hier kommt ein Absatz</p>
+
+        <p class="basis">Hier kommt ein REM Absatz</p>
+    </div>
+    
+</body>
+</html>
