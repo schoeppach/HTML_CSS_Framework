@@ -21,7 +21,7 @@
 }
 
 body {
-  background: rgb(122, 24, 101) url('../images/whitelake.png') no-repeat
+  background: rgb(247, 247, 242) url('../images/whitelake.png') no-repeat
   top center fixed;
   background-size: cover;
 }
@@ -29,7 +29,7 @@ body {
 /* Standart-Styling für den Wrapper und den Body auf großen Geräten */
 @media screen and (min-width: 1024px) {
   body {
-      background-image: rgb(122, 24, 101)url('../images/whitelake.png');
+      background-image: rgb(247, 247, 242)url('../images/whitelake.png');
   }
 
   .wrapper {
