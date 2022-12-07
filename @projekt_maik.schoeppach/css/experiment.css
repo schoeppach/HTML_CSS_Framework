@@ -40,7 +40,7 @@ body {
 
 .navbar-brand {
   color: rgb(223, 145, 28)!important;
-  background-color: transparent !important;
+  background-color: transparent!important;
   font-size: 20px;
 }
 .navbar-brand:hover {
@@ -66,7 +66,11 @@ body {
 /* ***************** */
   /* Inhaltsbereich */
 /* ***************** */
-      
+
+.header {
+  padding: 0;
+}
+
 .headline {
   font-size: 100%;
   justify-content: center;
@@ -94,12 +98,13 @@ body {
   font-size: 100% !important;
   text-align: center;
   padding: 50px;
-  margin: 0px;
+  margin: 0px; 
 }
 
 a:link, a:visited,  a:hover, a:active
 {
-    text-decoration: none;   
+    text-decoration: none; 
+    /* font-size: 20px !important; */ /*Link Schriftgröße */
 }
 
 .thumb {
