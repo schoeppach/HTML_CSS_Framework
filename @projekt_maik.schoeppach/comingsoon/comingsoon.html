@@ -65,17 +65,20 @@
           <div class="modal-content">
             
               <div class="modal-body">
+                
                 <form id="kontaktform" action="https://test.jaderbass.de/formtester.php" method="post">
                   <div class="form-group">
-                    <label for="recipient-name" class="form-control-label">Benachrichtigung erhalten</label>
-                    <input type="text" class="form-control" id="recipient-name" placeholder="dein-name@beispiel.de">
+                    <label for="recipient-name">Benachrichtigung erhalten</label>
+                    <input type="text" name="Mail" id="recipient-name" placeholder="dein-name@beispiel.de" class="form-control" >
                   </div>
-                </form>
-              </div>
 
-            <div class="modal-footer justify-content-center">
-              <button type="button" class="btn btn-default">Absenden</button>
-            </div>
+                  <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-default">Absenden</button>            
+                  </div>                
+                </form>
+              
+              </div>
+            
           </div>
         </div>
       </div>
