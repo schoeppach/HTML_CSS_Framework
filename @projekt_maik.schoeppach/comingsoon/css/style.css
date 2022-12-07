@@ -134,7 +134,7 @@ a:hover {
 }
 
 #subscribeModal .close {
-  color: (245, 163, 10); 
+  color: rgb(245, 163, 10); 
 }
 
 #subscribeModal .form-control {
