@@ -1,4 +1,4 @@
-// CSS Klassen für Navigation etc wechseln
+
 
 /* Smooth Scroll */
 $(document).ready(function() {
