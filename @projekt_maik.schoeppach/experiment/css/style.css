@@ -1,5 +1,5 @@
 
-/* Old Website */
+/* Experiment */
 
 /* **************************** */
     /* Allgemeines Styling */
@@ -24,6 +24,7 @@ body {
   background: rgb(31, 57, 95) url('../images/home.gif') no-repeat
   top center fixed;
   background-size: cover;
+  text-align: center;
 }
 
 /* Standart-Styling für den Wrapper und den Body auf großen Geräten 

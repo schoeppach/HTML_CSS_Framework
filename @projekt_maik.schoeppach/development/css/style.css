@@ -24,6 +24,7 @@ body {
   background: rgb(24, 119, 122) url('../images/octopus.png') no-repeat
   top center fixed;
   background-size: cover;
+  text-align: center;
 }
 
 /* Standart-Styling für den Wrapper und den Body auf großen Geräten
@@ -42,17 +43,16 @@ body {
   font-size: 20px;
 }
 .navbar-brand:hover {
-  color: rgb(223, 28, 174)!important; 
+  color: rgb(236, 127, 207)!important; 
 }
 .nav-link {
-  color: rgb(223, 28, 174)!important;
+  color: rgb(236, 127, 207)!important;
   font-size: 20px;
 }
 
 .nav-link:hover {
   color: rgb(223, 145, 28)!important; 
 }
-
 
 /* ***************** */
   /* Inhaltsbereich */

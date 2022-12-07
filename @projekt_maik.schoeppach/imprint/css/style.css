@@ -23,35 +23,28 @@ body {
   background: rgb(142, 219, 219) url('../images/baloon.png') no-repeat
   top center fixed;
   background-size: cover;
+  text-align: center;
 }
-
-/* Standart-Styling für den Wrapper und den Body auf großen Geräten
-@media screen and (min-width: 1024px) {
-  body {
-      background-image: rgb(142, 219, 219) url('../images/baloon.png');
-  } 
-} */
 
 /* *************************** */
     /* Navigations Leiste */
 /* *************************** */
 
 .navbar-brand {
-color: rgb(67, 74, 143)!important;
-background-color: transparent !important;
-font-size: 20px;
+  color: rgb(12, 112, 116)!important;
+  background-color: transparent !important;
+  font-size: 20px;
 }
-
 .navbar-brand:hover {
-  color: rgb(223, 28, 174)!important; 
+  color: rgb(177, 0, 133)!important; 
 }
 .nav-link {
-  color: rgb(223, 28, 174)!important;
+  color: rgb(177, 0, 133)!important;
   font-size: 20px;
 }
 
 .nav-link:hover {
-  color: rgb(219, 104, 10)!important; 
+  color: rgb(12, 112, 116)!important;
 }
    
 /* ***************** */
