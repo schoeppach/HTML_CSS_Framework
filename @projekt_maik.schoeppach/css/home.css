@@ -21,7 +21,7 @@
 }
 
 body {
-  background: rgb(15, 19, 36) url('../assets/images/koi.png') no-repeat
+  background: rgb(15, 19, 36) url('../images/koi.png') no-repeat
   top center fixed;
   background-size: cover;
   text-align: center;
