@@ -59,6 +59,11 @@ body {
   /* Inhaltsbereich */
 /* ***************** */
 
+a:link, a:visited,  a:hover, a:active
+{
+    text-decoration: none;   
+}
+
 .header {
   font-size: 100%;
   text-align: center;
