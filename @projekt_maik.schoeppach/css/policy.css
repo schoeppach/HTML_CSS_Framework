@@ -1,11 +1,12 @@
-body {
+
 
 /* Privacy */
     
 /* *************************** */
     /* Allgemines Styling */
 /* *************************** */
-    
+
+body {    
 background-position: 50% 50%;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -16,8 +17,6 @@ background-size: cover;
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 400;
-
-
 }
     
 /* ***************** */
