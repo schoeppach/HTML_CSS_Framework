@@ -90,6 +90,7 @@ body {
   padding-bottom: 100px;
 }
 
+/* Probeeinstellungen wegen fehlender Karussel images */
 .carousel-control-next, 
 .carousel-control-prev {
   position: absolute;
@@ -103,7 +104,6 @@ body {
   padding: 0;
   color: rgb(103, 248, 36)!important;
   text-align: center;
-  background: -1 -1;
   border: 0;
   opacity: 0;
   transition: opacity 0s ease;
